@@ -26,12 +26,32 @@
 
 // Work - home 5
 
-// let user = +prompt('Введите число'),
-//     result
-//     if (user<0) {
-//         result = user % 3 === 0? user ** 2 : user % 8;
+// let UserNumber = +prompt('Введите число!')
+//     console.log(`User number:`, UserNumber, "type: ", typeof (UserNumber))
+//     if (UserNumber < 0) {
+//         result = UserNumber % 3 === 0? UserNumber ** 2 : UserNumber % 8;
 //     }
-//         else if(user<0) {
-//             let root = Math.ceil(Math.sqrt(user));
-//             result
-//         }
+//         else if(UserNumber > 0) {
+//             let more = Math.ceil(Math.sqrt(UserNumber));
+//             result = more > 1? more ** 2: more - 0.5;
+//         } else {
+//             result = UserNumber .toString();    
+//         } 
+//         alert(`${result} (${typeof(result)})`);
+
+
+// Work - home 6
+
+let number = confirm("Вам точно есть 18?");
+    if (number) {
+        let numberUser = +prompt("Угадай число от 0 до 10"),
+            numberRandom = Math.floor(10 * Math.random()) + 1;
+        if (numberUser === numberRandom) {
+            alert("Вы угадали!");
+        }else {
+            alert("Вы не угадали!");
+        }
+    }else {
+        alert("Вам нет 18");
+    }
+            
