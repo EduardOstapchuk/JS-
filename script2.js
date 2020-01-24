@@ -14,7 +14,6 @@
 //             if (num % 2 === 0) {
 //                 alert('Четное')
 //             } else {
-//                 if (num % 2 === 1) 
 //                 alert('Не четное')
 //             } 
 //         }
@@ -40,16 +39,16 @@
 
 // Work - home 6
 
-let number = confirm("Вам точно есть 18?");
-    if (number) {
-        let numberUser = +prompt("Угадай число от 0 до 10"),
-            numberRandom = Math.floor(10 * Math.random()) + 1;
-        if (numberUser === numberRandom) {
-            alert("Вы угадали!");
-        }else {
-            alert("Вы не угадали!");
-        }
-    }else {
-        alert("Вам нет 18");
-    }
+// let number = confirm("Вам точно есть 18?");
+//     if (number) {
+//         let numberUser = +prompt("Угадай число от 0 до 10"),
+//             numberRandom = Math.floor(10 * Math.random()) + 1;
+//         if (numberUser === numberRandom) {
+//             alert("Вы угадали!");
+//         }else {
+//             alert("Вы не угадали!");
+//         }
+//     }else {
+//         alert("Вам нет 18");
+//     }
             
