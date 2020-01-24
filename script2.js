@@ -1,5 +1,3 @@
-
-
 // work-home 4
 // let UserNumber = confirm ('Сыграем?')
 // console.log(UserNumber, "type: ", typeof(UserNumber))
