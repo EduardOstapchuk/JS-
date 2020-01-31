@@ -28,14 +28,26 @@
 
 // Work - home - String
 
-// function makeid()
-// {
-//     var text = "";
-//     var possible = "abcdefghijklmnopqrstuvwxyz";
+let genString = "",
+    newStr = "",
+    latters = "",
+    random = "";
+for (let i = 65; i <= 120; i++) {latters += String.fromCharCode(i);}
+for (let j = 0; j <= 25; j++) {
+    genString = latters.charAt(Math.floor(Math.random() * latters.length));
+    if (genString === "E" || genString === "w") {
+        break;
+    } else {
+        random += genString;
+    }
+ }
 
-//     for( var i=0; i < 5; i++ )
-//         text += possible.charAt(Math.floor(Math.random() * possible.length));
-//         console.log(text)
-
-//     return text;
-// }
+ console.log(random);
+ newStr = Math.floor(Math.random() * (random.length + 1));
+ console.log(`Symbol at ${newStr} Symbol is ${random.charAt(newStr)}`);
+ if (random.length < 5) {
+     console.log(random.repeat(4));
+ }
+ else {
+     console.log(random.substring(4));
+ }

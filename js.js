@@ -1,7 +1,19 @@
-// console.log(false);
-// console.log(!"");
 
-let a = 10;
-let b = new Number(10);
-console.log(a == b);
-console.log(a == b);
+let generatedString="",
+    newLetter,
+    letters=/[a-z]/i,
+    randomIndex;
+
+while(generatedString.length<25){
+    newLetter=String.fromCharCode(Math.floor(Math.random()*57+66));
+    if(!newLetter.match(letters)) 
+        continue;
+    else if(newLetter==="E"||newLetter==="w") 
+        break;
+    else 
+        generatedString+=newLetter;
+}
+
+console.log(generatedString);
+randomIndex=Math.floor(Math.random()*(generatedString.length+1))
+console.log(`Symbol at ${randomIndex} position is ${generatedString.charAt(randomIndex)}`);
